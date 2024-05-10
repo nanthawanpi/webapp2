@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  front:
+    image: front:latest
+    build:
+      context: .
+      dockerfile: ../demo-app/frontend/FrontDockerfile
+    ports:
+      - "80:80"
+
