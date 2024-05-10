@@ -86,6 +86,7 @@ const submit = async()=>{
                 })
         if(res.status === 200){
             const response = await res.json()
+	    console.log('Insert successfully')
             router.push('/admin/announcement')
         }else{
             alert('Could not create this announcement please try again.')

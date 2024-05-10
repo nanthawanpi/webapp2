@@ -20,7 +20,7 @@ const deleteAnnouncement = async () =>{
       })
       if(res.ok){
         announcementDetail.value = announcementDetail.value.filter((andata)=>andata.id !== params.id)
-        console.log('delete successfully')
+        console.log('Delete successfully')
         router.push({
           name : 'home'
         })
